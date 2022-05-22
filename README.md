@@ -67,4 +67,38 @@ Por último, en **Volumen de inicio** marcamos la opción de **Especificar un ta
 
 ## Acceso y configuración de nuestra instancia
 
+Para el acceso hacia nuestro servidor utilizaremos la terminal **CMD de Windows**, para ello nos dirigimos a nuestro buscador de Windows y escribimos **CMD** y pinchamos sobre él para abrir la terminal.
+
+![image](https://user-images.githubusercontent.com/104928044/169716537-f2bf3d31-c14d-4942-b456-1475a08bbb8b.png)
+
+Como quiero simplificarlo lo máximo posible para que personas no experimentadas en el manejo de comandos de terminales puedan conseguir realizar este tutorial, voy a intentar no entrar mucho en técnicismos.
+
+Vamos a dirigirnos a la carpeta donde tenemos guardado nuestras par de claves que descargamos anteriormente, en mi caso y a modo de ejemplo sencillo (pero no seguro) estarán en mi escritorio.
+
+![image](https://user-images.githubusercontent.com/104928044/169716833-2067d1f9-1c81-4fb5-aece-84303fa014ac.png)
+
+Se nos abre la siguiente ventana de color negra en la que nos muestra escrito en blanco **C:\Users\(NOMBRE DE NUESTRO USUARIO DE WINDOWS)**, desde este punto vamos a usar el comando **cd** seguido de la ruta que nos lleva a nuestro escritorio, pero para asegurarnos usaremos **dir**, este nos mostrará todas carpetas y archivos del directorio en el que nos encontramos.
+
+dir + tecla enter
+
+![image](https://user-images.githubusercontent.com/104928044/169717085-c04f3350-68d1-4459-a78c-6a2b7bbab0d4.png)
+
+En mi caso el nombre de mi escritorio de encuentra en inglés **(Desktop)**, pero muy probablamente el de vosotros se encuentre como **(Escritorio)**. Por lo que para dirigirnos a este lugar debemos escribir lo siguiente:
+
+En mi caso:
+~~~
+cd Desktop
+~~~
+Muy probablemente en el de vosotros:
+~~~
+cd Escritorio
+~~~
+
+Y pulsamos **Enter**.
+
+Comprobamos de nuevo si nos encontramos en el directorio correcto con el comando **dir** y vemos si se encuentran nuestro par de claves en ese lugar.
+
+![image](https://user-images.githubusercontent.com/104928044/169717337-50df68d8-e802-40f9-a675-d1f817bb42c5.png)
+
+
 
