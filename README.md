@@ -283,7 +283,7 @@ De esta forma ya tendríamos todo completado y ya nos debería de permitir el ac
 ssh -p 22422 ubuntu@152.67.71.249
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/171005697-2a843e82-3dc4-4078-9804-5385a77dc997.png)
+![image](https://user-images.githubusercontent.com/104928044/171006448-5dd7c21c-0c31-48a2-8631-13185863ca62.png)
 
 ¡LISTO!
 
