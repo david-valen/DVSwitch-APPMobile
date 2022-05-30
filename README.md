@@ -100,5 +100,60 @@ Comprobamos de nuevo si nos encontramos en el directorio correcto con el comando
 
 ![image](https://user-images.githubusercontent.com/104928044/169717337-50df68d8-e802-40f9-a675-d1f817bb42c5.png)
 
+Para realizar el acceso mediante la conexión SSH hacia nuestro servidor mediante par de claves debemos tener en cuenta este paso:
+
+![image](https://user-images.githubusercontent.com/104928044/170970958-648d23cf-5a9f-411e-92a8-20351026c3ca.png)
+
+Tendremos que irnos al apartado de **"Recursos informáticos > Instancias > Detalles de la instancia"** y comprobar el usuario e IP pública que nos han asignado para la conexión, en este caso el usuario es **"ubuntu"** y la IP pública **"152.67.71.249"**. (Es muy importante que esta IP no la demos a conocer, mediante esta dirección cualquier posible atacante podrían tumbarnos el servidor o incluso tener acceso a él si no se ha implementado un nivel de seguridad al menos básico).
+
+En esta guía no entraremos en detalles a la hora de bastionar un servidor Cloud ya que podría ser tan extenso que daría para otro apartado más, pero es importante tener en cuenta este tipo de consejos de un principio para usuarios totalmente nóveles.
+
+Sigamos entonces, ahora construiremos el comando que nos dará acceso a nuestro servidor ya teniendo los datos esenciales de acceso y nuestra clave privada para la conexión:
+
+![image](https://user-images.githubusercontent.com/104928044/170973050-8f23985a-8936-4918-8113-188a0783539c.png)
+
+Nos realizará una cuestión, en la que nos dice si queremos seguir con la conexión y escribimos **"yes"**.
+
+**PUEDES OMITIR ESTA PARTE SI NO TE APARECE EL SIGUIENTE MENSAJE**
+
+**ADVERTENCIA:** Es posible que nos salga la siguiente alerta en la que nos dice que nuestra clave privada no se encuetra protegida (Debemos protegerla en un sitio seguro y recomendable bajo algún tipo de clave o encriptación) nosotros realizaremos un remedio "NO ejemplar" pero que nos servirá para continuar:
+
+![image](https://user-images.githubusercontent.com/104928044/170973671-ac9547c8-935b-45ea-948c-81fd55d0cba2.png)
+
+Nos dirigimos en Windows a nuestro archivo de clave privada, recordad (la que finaliza con la extensión ".key") y realizaremos lo siguiente:
+
+![image](https://user-images.githubusercontent.com/104928044/170974156-9fa62cb9-69aa-4e26-80f7-d6fabe31b59b.png)
+
+Haremos click derecho sobre el archivo ".key" y seleccionamos **"Propiedades"**.
+
+![image](https://user-images.githubusercontent.com/104928044/170974728-fa835283-ee18-479d-88b9-22a7c75c0030.png)
+
+Veremos los usuarios que tienen permisos sobre este archivo y nos dirigimos a **"Opciones avanzadas"**.
+
+![image](https://user-images.githubusercontent.com/104928044/170975299-0f657d24-9fdd-4072-b46f-ef0970921cc5.png)
+
+Abajo nos aparecerá un botón en el que nos dice **"Deshabilitar herencia"** pinchamos sobre este y se nos abrirá otra nueva ventana en la que seleccionaremos **"Quitar todos los permisos heredados de este objeto"**.
+
+Ahora en la misma ventana donde ya no nos aparecen todos los usuarios que tenían permisos anteriormente pulsamos sobre **"Agregar"**.
+
+![image](https://user-images.githubusercontent.com/104928044/170976109-baf49ec4-e8bf-491c-a896-ea37cf19a644.png)
+
+![image](https://user-images.githubusercontent.com/104928044/170976194-917cedb5-13ae-49e2-87a6-ce69f0e294a6.png)
+
+Realizamos click sobre **"Seleccionar una entidad de seguridad"** y se nos abrirá una nueva ventana.
+
+![image](https://user-images.githubusercontent.com/104928044/170976708-cd706efa-321d-4b9e-9532-ab9f95310491.png)
+
+Donde se muestra la flecha roja, debemos añadir nuestro usuario de Windows y seleccionar en **"Comprobar nombres"**, si todo está correcto pulsamos sobre aceptar.
+
+Una vez ya tengamos nuestro usuario seleccionado, marcamos con el ratón en la casilla de "Control total", aplicamos y aceptamos en todas las ventanas anteriores.
+
+![image](https://user-images.githubusercontent.com/104928044/170977167-95a6fc89-4350-4395-b249-8830ab9419c3.png)
+
+De nuevo realizamos el intento de conexión como anteriormente explicamos y podemos comprobar que ya tenemos acceso a nuestro servidor mediante nuestro par de claves.
+
+![image](https://user-images.githubusercontent.com/104928044/170977912-7046b161-3b7a-4895-848f-efd99aaecd6b.png)
+
+**FIN DE LA PARTE QUE PUEDES OMITIR SI NO TE APARECE EL MENSAJE DE ADVERTENCIA**
 
 
