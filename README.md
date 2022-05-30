@@ -156,7 +156,7 @@ De nuevo realizamos el intento de conexión como anteriormente explicamos y pode
 
 **[FIN DE LA PARTE QUE PUEDES OMITIR SI NO TE APARECE EL MENSAJE DE ADVERTENCIA]**
 
-## Canmbiar acceso de par de claves a un acceso mediante usuario y contraseña (Método mucho más inseguro).
+## Cambiar acceso de par de claves a un acceso mediante usuario y contraseña (Método mucho más inseguro).
 
 Como temo que muchas de las personas que veréis esta guía vais a preferir este método más tradicional pero más inseguro, os lo voy a intentar explicar de la forma más sencilla posible y segura.
 
@@ -196,11 +196,37 @@ sudo nano jail.conf
 
 Nos dirigimos al apartado [DEFAULT] y descomentaremos las siguientes líneas (Borrar '#' de delante), os debe de quedar algo así:
 
-![image](https://user-images.githubusercontent.com/104928044/170984761-1bb3e84c-3bf4-4abe-a590-c52b0fd50aec.png)
+![image](https://user-images.githubusercontent.com/104928044/170997353-baa88d9f-d340-4e3d-9972-9f6e5bd25b00.png)
 
 Para guardar esta configuración debemos pulsar **"Control + O" y "Enter"** y para salir **"Control + X"**.
 
 Hemos configurado para que haga un baneo básico gradual, cada cierto numero de equivocaciones será baneado un tiempo que este se prolongará más a cada número de intentos fallidos que realice.
+
+Vamos ahora a configurar nuestro puerto SSH de entrada que no será el que viene por defecto [22] ya que seremos muy propensos a ataques automatizados con ese puerto.
+
+Nos dirigimos al directorio donde encontramos el archivo de configuración de SSH:
+
+~~~
+cd /etc/ssh
+~~~
+
+![image](https://user-images.githubusercontent.com/104928044/170998583-5274520e-562c-45aa-bede-757c69a0e87f.png)
+
+Abrimos el archivo "sshd_config":
+
+~~~
+sudo nano sshd_config
+~~~
+
+Una vez se nos despligue este archivo, debemos configurar dos parámetros, uno será el puerto por el que tendremos acceso por SSH y permitir la autenticación mediante contraseña:
+
+Cambiamos el puerto por defecto:
+![image](https://user-images.githubusercontent.com/104928044/170999386-e18ca01d-44be-4d6e-aea7-f354d112e689.png)
+
+Permitimos la autenticación por contraseña:
+![image](https://user-images.githubusercontent.com/104928044/170999474-5d870967-d3e7-48ff-9434-36351eb3a73d.png)
+
+Para guardar esta configuración debemos pulsar **"Control + O" y "Enter"** y para salir **"Control + X"**.
 
 
 
