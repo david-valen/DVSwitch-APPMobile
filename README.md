@@ -114,7 +114,7 @@ Sigamos entonces, ahora construiremos el comando que nos dará acceso a nuestro 
 
 Nos realizará una cuestión, en la que nos dice si queremos seguir con la conexión y escribimos **"yes"**.
 
-**PUEDES OMITIR ESTA PARTE SI NO TE APARECE EL SIGUIENTE MENSAJE**
+**[PUEDES OMITIR ESTA PARTE SI NO TE APARECE EL SIGUIENTE MENSAJE]**
 
 **ADVERTENCIA:** Es posible que nos salga la siguiente alerta en la que nos dice que nuestra clave privada no se encuetra protegida (Debemos protegerla en un sitio seguro y recomendable bajo algún tipo de clave o encriptación) nosotros realizaremos un remedio "NO ejemplar" pero que nos servirá para continuar:
 
@@ -154,6 +154,6 @@ De nuevo realizamos el intento de conexión como anteriormente explicamos y pode
 
 ![image](https://user-images.githubusercontent.com/104928044/170977912-7046b161-3b7a-4895-848f-efd99aaecd6b.png)
 
-**FIN DE LA PARTE QUE PUEDES OMITIR SI NO TE APARECE EL MENSAJE DE ADVERTENCIA**
+**[FIN DE LA PARTE QUE PUEDES OMITIR SI NO TE APARECE EL MENSAJE DE ADVERTENCIA]**
 
 
