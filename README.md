@@ -156,4 +156,64 @@ De nuevo realizamos el intento de conexión como anteriormente explicamos y pode
 
 **[FIN DE LA PARTE QUE PUEDES OMITIR SI NO TE APARECE EL MENSAJE DE ADVERTENCIA]**
 
+## Canmbiar acceso de par de claves a un acceso mediante usuario y contraseña (Método mucho más inseguro).
+
+Como temo que muchas de las personas que veréis esta guía vais a preferir este método más tradicional pero más inseguro, os lo voy a intentar explicar de la forma más sencilla posible y segura.
+
+En primer lugar realizamos una actualizacion de nuestros repositorios:
+
+~~~
+sudo apt update -y && sudo apt upgrade -y
+~~~
+
+He instalaremos **Fail2ban** esta aplicación nos protegerá aquellos puertos que tengamos abiertos ante varios intentos fallidos y que posteriormente serán baneados para evitar posibles ataques de fuerza bruta.
+
+~~~
+sudo apt install fail2ban -y
+~~~
+
+Nos dirigimos al siguiente directorio en el que tendremos que modificar una serie de parámetros importantes dentro de esta herramienta, aunque es muy personalizable según las necesidades que cada uno vaya a requerir.
+
+~~~
+cd /etc/fail2ban
+~~~
+
+![image](https://user-images.githubusercontent.com/104928044/170983006-9523ab14-dfb7-43b0-a8c4-5822bc76ad54.png)
+
+Vamos a realizar una copia de seguridad de nuestro archivo de configuración que viene por defecto **"jail.conf"**.
+
+~~~
+sudo cp jail.conf jail.backup.conf
+~~~
+
+![image](https://user-images.githubusercontent.com/104928044/170983798-ffff2600-4774-4a68-9034-ca7d2926781d.png)
+
+Abrimos el archivo de configuración con el siguiente comando:
+
+~~~
+sudo nano jail.conf
+~~~
+
+Nos dirigimos al apartado [DEFAULT] y descomentaremos las siguientes líneas (Borrar '#' de delante), os debe de quedar algo así:
+
+![image](https://user-images.githubusercontent.com/104928044/170984761-1bb3e84c-3bf4-4abe-a590-c52b0fd50aec.png)
+
+Para guardar esta configuración debemos pulsar **"Control + O" y "Enter"** y para salir **"Control + X"**.
+
+Hemos configurado para que haga un baneo básico gradual, cada cierto numero de equivocaciones será baneado un tiempo que este se prolongará más a cada número de intentos fallidos que realice.
+
+
+
+# Instalación de DVSwitch
+
+Comenzamos con lo importante, una vez nos encontremos dentro de de nuestro servidor a través de nuestra ventana CMD, lo primero que debemos realizar es una actualización de nuestros repositorios para ello debemos de ejecutar el siguiente comando:
+
+~~~
+sudo apt update -y && sudo apt upgrade -y
+~~~
+
+![image](https://user-images.githubusercontent.com/104928044/170979761-70901091-c064-408d-8664-2f6b242e7420.png)
+
+Esta actualización nos demorará varios minutos, tened paciencia.
+
 
