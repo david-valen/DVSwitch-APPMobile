@@ -212,7 +212,7 @@ cd /etc/ssh
 
 ![image](https://user-images.githubusercontent.com/104928044/170998583-5274520e-562c-45aa-bede-757c69a0e87f.png)
 
-Abrimos el archivo "sshd_config":
+Abrimos el archivo **"sshd_config"**:
 
 ~~~
 sudo nano sshd_config
@@ -221,14 +221,71 @@ sudo nano sshd_config
 Una vez se nos despligue este archivo, debemos configurar dos parámetros, uno será el puerto por el que tendremos acceso por SSH y permitir la autenticación mediante contraseña:
 
 Cambiamos el puerto por defecto:
+
 ![image](https://user-images.githubusercontent.com/104928044/170999386-e18ca01d-44be-4d6e-aea7-f354d112e689.png)
 
 Permitimos la autenticación por contraseña:
+
 ![image](https://user-images.githubusercontent.com/104928044/170999474-5d870967-d3e7-48ff-9434-36351eb3a73d.png)
 
 Para guardar esta configuración debemos pulsar **"Control + O" y "Enter"** y para salir **"Control + X"**.
 
+Es importante antes de aplicar los cambios dar una contraseña al usuario **"ubuntu"** con el comando "passwd" de no darle una contraseña previamente, el usuario no tendrá credenciales y no podremos acceder a nuestro servidor.
 
+~~~
+sudo passwd ubuntu
+~~~
+
+![image](https://user-images.githubusercontent.com/104928044/171000273-8cde1617-5645-4507-84fc-528b2807b6c4.png)
+
+Debéis saber que aunque cuando escribáis no se os muestre la contraseña realmente estáis escribiendo, es simplemente por seguridad por lo que no se os muestra y pulsáis enter para pasar de nuevo a confirmar la contraseña anteriormente ofrecida.
+
+Reiniciamos y aplicamos los cambios con el comando:
+
+~~~
+systemctl restart sshd.service
+~~~
+
+![image](https://user-images.githubusercontent.com/104928044/171000897-dd276f51-ab11-4671-b0af-c0d27c4a12dc.png)
+
+Nos pedirá de nuevo la contraseña que le ofrecimos al usuario para confirmar los cambios y listo.
+
+Por último, nos queda abrir el nuevo puerto de entrada por SSH que tendrá nuestro servidor para ellos debemos de irnos a la web de Oracle Cloud en el apartado de **"Recursos informáticos > Instancias > Detalles de la instancia"**:
+
+![image](https://user-images.githubusercontent.com/104928044/171001412-8282002d-6693-42c3-b239-2ca947d4f8bc.png)
+
+Pinchamos sobre el nombre de la **"Subred"** que le tengamos asignada.
+
+![image](https://user-images.githubusercontent.com/104928044/171001887-c655e07f-469e-48c7-996e-fb4b7fb21e27.png)
+
+De nuevo hacemos click sobre **"Default Security List for principal"**.
+
+![image](https://user-images.githubusercontent.com/104928044/171001992-6428ea30-22bf-4ceb-a7ba-4771647617a6.png)
+ 
+ Y añadimos una nueva regla de entrada.
+ 
+ ![image](https://user-images.githubusercontent.com/104928044/171002238-6c61d820-885a-4b3d-af3d-e2ba5f0955c3.png)
+
+![image](https://user-images.githubusercontent.com/104928044/171002526-f8135601-51d1-4641-b106-466825b2a5f0.png)
+
+Guardamos esta regla de entrada y lo que estaremos indicando es que desde cualquier IP por protocolo TCP y con destino al puerto 22422 le permitamos la conexión.
+
+Pero eso no es todo, nos falta algo importante, añadir nuestra regla en la tabla de IP Tables. 
+
+~~~
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 22422 -j ACCEPT
+sudo netfilter-persistent save
+~~~
+
+De esta forma ya tendríamos todo completado y ya nos debería de permitir el acceso mediante usuario y clave a la hora desde un nuevo CMD realizar la conexión con nuestro servidor de la siguiente manera:
+
+~~~
+ssh -p 22422 ubuntu@152.67.71.249
+~~~
+
+![image](https://user-images.githubusercontent.com/104928044/171005697-2a843e82-3dc4-4078-9804-5385a77dc997.png)
+
+¡LISTO!
 
 # Instalación de DVSwitch
 
