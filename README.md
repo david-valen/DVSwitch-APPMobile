@@ -273,14 +273,14 @@ Guardamos esta regla de entrada y lo que estaremos indicando es que desde cualqu
 Pero eso no es todo, nos falta algo importante, añadir nuestra regla en la tabla de IP Tables. 
 
 ~~~
-sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 22422 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport [PUERTO] -j ACCEPT
 sudo netfilter-persistent save
 ~~~
 
 De esta forma ya tendríamos todo completado y ya nos debería de permitir el acceso mediante usuario y clave a la hora desde un nuevo CMD realizar la conexión con nuestro servidor de la siguiente manera:
 
 ~~~
-ssh -p 22422 ubuntu@152.67.71.249
+ssh -p [PUERTO] [USUARIO]@[TU IP PÚBLICA]
 ~~~
 
 ![image](https://user-images.githubusercontent.com/104928044/171006448-5dd7c21c-0c31-48a2-8631-13185863ca62.png)
