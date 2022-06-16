@@ -745,6 +745,12 @@ Manteniendo pulsada la letra **"A"** podemos elegir el modo por el que queremos 
 Manteniendo la **"B"** podremos elegir que Talkgroup de YSF queremos utilizar, voy a elegir EUROPELINK por ejemplo. Podemos incluso utilizar el dashboard de EUROPELINK (http://europelink.pa7lim.nl/) para observar todo el movimiento del tráfico que existe en la red y los compañeros que se encuentran transmitiendo.
 
 <p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174129303-54ab397c-3ba2-4ea2-a32f-76c627146f7c.png"
+		alt="mobile"
+	style="float: left; margin-right: 10px;" />
+</p>
+
+<p align="center">
 	<img src="https://user-images.githubusercontent.com/104928044/174104199-185ae963-8266-4b1b-9568-6e9ef07e5e62.png"
 		alt="mobile"
 	style="float: left; margin-right: 10px;" />
