@@ -452,7 +452,7 @@ Una vez tengamos todos los parámetros configurados pulsaremos sobre **"Save"**.
 
 Ahora vamos a configurar nuestra conexión a través de **YSF** y la red de **EUROPELINK** como ejemplo, vosotros podréis utilizar la que más os guste.
 
-![image](https://user-images.githubusercontent.com/104928044/174102434-195c1fdf-eae9-4fea-be8b-f3fb76e1cc06.png)
+![image](https://user-images.githubusercontent.com/104928044/174113084-b54524ee-d4d2-4653-97dd-8fdde9b52814.png)
 
 Manteniendo pulsada la letra **"A"** podemos elegir el modo por el que queremos salir:
 
