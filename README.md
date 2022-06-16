@@ -10,7 +10,13 @@ Será necesario tener una licencia vigente de radioaficionado y estar registrado
 
 Entramos en nuestra cuenta de Oracle Cloud y nos dirigimos al menú de nuestra banda izquierda, este es posible desplegarlo mediante el icono con tres línes horizontales, nos dirigimos al apartado de **Recursos informáticos > Instancia**.
 
-<center>![image](https://user-images.githubusercontent.com/104928044/169712856-42d9e12a-dd8c-4329-93fa-98e44ca0ca45.png)</center>
+![image](https://user-images.githubusercontent.com/104928044/169712856-42d9e12a-dd8c-4329-93fa-98e44ca0ca45.png)
+
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/169712856-42d9e12a-dd8c-4329-93fa-98e44ca0ca45.png"
+		alt="Panel de ayuda"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Nos cambiará de ventana e iremos a un menú donde aparecerá un botón de color azul en que nos dirá **Crear instancia**.
 
