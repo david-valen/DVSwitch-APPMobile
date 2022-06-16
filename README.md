@@ -4,7 +4,7 @@ Creación de DVSwitch Server en Oracle Cloud (VPS Gratuito) y DVSwitch Mobile pa
 ## Requisitos Previos
 Para seguir correctamente esta guía será necesario estar en posesión de algún servidor VPS cloud de pago o parcialmente gratuito como el que se ofrece en este tutorial. En el registro para la obtención de esta versión gratuita de Oracle Cloud será imprescindible tener una tarjeta bancaria para la autenticación de ser una persona física.
 
-Será necesario tener una licencia vigente de radioaficionado.
+**Será necesario tener una licencia vigente de radioaficionado.**
 
 ## Creación de una instancia en Oracle Cloud
 
