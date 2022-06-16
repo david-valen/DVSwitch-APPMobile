@@ -365,4 +365,35 @@ Aquí debemos de introducir nuestro ID de DMR. (Esta ID se obtiene desde la web 
 
 ![image](https://user-images.githubusercontent.com/104928044/174064873-2fc2ac16-4181-402a-8766-8b7219e3950d.png)
 
+En la siguiente ventana nos requiere la misma ID, pero en la que debemos de añadirle dos dígitos más pudiendo estar estos entre los intervalos de (00 hasta 99), de esta manera evitamos la duplicidad de nuestra ID, así pudiendo usar la misma más un sufijo en multitud de dispositivos alternativos a uno principal.
+
+![image](https://user-images.githubusercontent.com/104928044/174078273-4255d096-8b46-4a73-95e2-678f023eb04e.png)
+
+El módulo Dstar lo dejaremos por defecto en "B" ya que para nuestro objetivo ahora mismo no nos es necesario.
+
+![image](https://user-images.githubusercontent.com/104928044/174078568-9bd478fc-f89f-4b77-a081-df6276c4bf37.png)
+
+ID NXDN, lo dejaremos vacío y seguimos hacia la siguiente ventana.
+
+![image](https://user-images.githubusercontent.com/104928044/174079133-ca4da7f2-a2b8-4fb2-950f-9723fee7d2f5.png)
+
+Este apartado es importante, debemos configurar el puerto por el que pasará todo nuestro tráfico, vamos a poner como ejemplo **"51051"** pero esto va a gustos y preferencias de cada uno de vosotros.
+
+![image](https://user-images.githubusercontent.com/104928044/174079227-61d33c13-c880-4952-b4ec-fc3360508007.png)
+
+Elegimos el servidor de Brandmeister España y pulsamos en "Ok".
+
+![image](https://user-images.githubusercontent.com/104928044/174080854-47054e6d-5e1f-4645-a01f-4e27bcded943.png)
+
+Como bien nos indica el apartado introduciremos nuestra contraseña que tenemos asociada a nuestra cuenta de Brandmeister (No es obligatorio el uso de esta red, esta se trata de una red privada en la que para su uso debemos realizar un registro y obtener estas credenciales de acceso). En este caso, realizaremos la conexión mediante otra red, que posteriormente explicaremos.
+
+![image](https://user-images.githubusercontent.com/104928044/174081979-63309b38-f8cd-4713-a55a-b93c23c306f3.png)
+
+Para este apartado he estado realizando varias pruebas con un servidor AMBE pero desde Oracle Cloud y mediante varias pruebas no he podido conseguir que el tráfico de la comunicación pase por este mismo para mejorar muy notablemente la calidad de audio, por lo que lo haremos funcionar mediante la opción **"4. Sin codificador de voz de hardware"** en la utilizaremos un software Vocoder.
+
+![image](https://user-images.githubusercontent.com/104928044/174082036-c102c18e-3bf5-470a-8938-dcb8b5898f0c.png)
+
+Pulsamos sobre "Yes" y todos los ajustes comenzarán a aplicarse.
+
+![image](https://user-images.githubusercontent.com/104928044/174082166-838e6694-7ae0-47d6-bdc5-07a113ca6374.png)
 
