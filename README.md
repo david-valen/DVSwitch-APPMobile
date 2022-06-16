@@ -299,4 +299,70 @@ sudo apt update -y && sudo apt upgrade -y
 
 Esta actualización nos demorará varios minutos, tened paciencia.
 
+Una vez tengamos todo actualizado, es hora de ponernos manos a la obra con la instalación de DVSwitch Server.
+Para comenzar descargaremos el archivo de instalación de los repositorios con el siguiente comando:
+
+~~~
+wget http://dvswitch.org/buster
+~~~
+
+![image](https://user-images.githubusercontent.com/104928044/174059352-f5ae3673-81a4-4f8b-bf0c-2db3d4c6fef9.png)
+
+A continuación, daremos permisos de ejecución al archivo **"buster"** recientemente obtenido y lo ejecutaremos.
+
+~~~
+sudo chmod +x buster
+sudo ./buster
+~~~
+
+![image](https://user-images.githubusercontent.com/104928044/174059751-d1a18abc-bd6b-4aa7-b887-90eecdadbe1a.png)
+
+Ya teniendo los repositorios correctamente descargados, iniciamos la instalación de DVSwitch Server de la siguiente manera:
+
+~~~
+sudo apt install dvswitch-server
+~~~
+
+![image](https://user-images.githubusercontent.com/104928044/174060310-a1e53541-814a-4123-9109-6b25c593ef02.png)
+
+En este punto debemos esperar unos minutos a que se realice toda la instalación y realizaremos un reinicio de nuestro servidor VPS mediante:
+
+~~~
+sudo reboot
+~~~
+
+Nos expulsará de la terminal de nuestro VPS. no os preocupéis, ahora simplemente debéis esperar unos minutos a que el servidor tenga tiempo de reiniciarse y volvéis a acceder de la misma manera que anteriormente explicamos a través de nuestro CMD de Windows.
+
+~~~
+ssh -p [PUERTO] [USUARIO]@[TU IP PÚBLICA]
+~~~
+
+Introducimos la contraseña y volveremos a estar dentro de nuestro VPS.
+
+Ahora solo debemos de escribir las sigles **"dvs"** en nuestra terminal y pulsar **"enter"** para activar el script.
+
+Nos mostrará una ventana en la que nos dirá si queremos cambiar el idioma de nuestra aplicación, en mi caso, lo cambiaré a Español, para ello elegiremos la opción de "Yes" y nos mostrará una lista con varios idiomas, nos desplazamos con las flechas de teclado hasta la opción que decidamos y con la tecla de "TAB" (Tabulador), señalaremos la opción de "Ok" para confirmar nuestra selección y pulsamos "Enter".
+
+![image](https://user-images.githubusercontent.com/104928044/174062839-ab8fc1f8-2be3-4435-af5a-dc4d30c088e0.png)
+
+Nos mostrará el menú principal de la herramienta donde podremos configurar todos los apartados, pero en este caso iremos al grano y os explicaré las configuraciones básicas y esenciales para comenzar a hacerlo funcional.
+
+![image](https://user-images.githubusercontent.com/104928044/174063077-92142d89-646b-4afb-a0b8-092eff11c6e8.png)
+
+Elegimos la opción "01 Configuración inicial", recordad, marcáis el apartado con las flechas y con "TAB"+"Enter" confirmáis la opción.
+
+![image](https://user-images.githubusercontent.com/104928044/174063353-7cbbf76e-44dc-4867-be10-80bed4b65b32.png)
+
+Tened en cuenta que para el uso de esta herramienta será necesario tener una licencia vigente de radioaficionado, indicativo e ID de DMR. Elegimos la opción de "Yes".
+
+![image](https://user-images.githubusercontent.com/104928044/174063758-ad818d5d-7e6a-4cd1-95f3-549ca5f8c1cc.png)
+
+En esta ventana introducimos nuestro indicativo, seguimos.
+
+![image](https://user-images.githubusercontent.com/104928044/174064308-7a5ba338-8290-40cd-9985-fb98dfe65ebf.png)
+
+Aquí debemos de introducir nuestro ID de DMR. (Esta ID se obtiene desde la web de [radioid.net](https://radioid.net/))
+
+![image](https://user-images.githubusercontent.com/104928044/174064873-2fc2ac16-4181-402a-8766-8b7219e3950d.png)
+
 
