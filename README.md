@@ -116,15 +116,15 @@ Nos realizará una cuestión, en la que nos dice si queremos seguir con la conex
 
 **[PUEDES OMITIR ESTA PARTE SI NO TE APARECE EL SIGUIENTE MENSAJE]**
 
-**ADVERTENCIA:** Es posible que nos salga la siguiente alerta en la que nos dice que nuestra clave privada no se encuetra protegida (Debemos protegerla en un sitio seguro y recomendable bajo algún tipo de clave o encriptación) nosotros realizaremos un remedio "NO ejemplar" pero que nos servirá para continuar:
+**ADVERTENCIA:** Es posible que nos salga la siguiente alerta en la que nos dice que nuestra clave privada no se encuetra protegida (Debemos protegerla en un sitio seguro y recomendable bajo algún tipo de clave o encriptación) nosotros realizaremos un remedio **"NO ejemplar"** pero que nos servirá para continuar:
 
 ![image](https://user-images.githubusercontent.com/104928044/170973671-ac9547c8-935b-45ea-948c-81fd55d0cba2.png)
 
-Nos dirigimos en Windows a nuestro archivo de clave privada, recordad (la que finaliza con la extensión ".key") y realizaremos lo siguiente:
+Nos dirigimos en Windows a nuestro archivo de clave privada, recordad (la que finaliza con la extensión **".key"**) y realizaremos lo siguiente:
 
 ![image](https://user-images.githubusercontent.com/104928044/170974156-9fa62cb9-69aa-4e26-80f7-d6fabe31b59b.png)
 
-Haremos click derecho sobre el archivo ".key" y seleccionamos **"Propiedades"**.
+Haremos click derecho sobre el archivo **".key"** y seleccionamos **"Propiedades"**.
 
 ![image](https://user-images.githubusercontent.com/104928044/170974728-fa835283-ee18-479d-88b9-22a7c75c0030.png)
 
@@ -146,7 +146,7 @@ Realizamos click sobre **"Seleccionar una entidad de seguridad"** y se nos abrir
 
 Donde se muestra la flecha roja, debemos añadir nuestro usuario de Windows y seleccionar en **"Comprobar nombres"**, si todo está correcto pulsamos sobre aceptar.
 
-Una vez ya tengamos nuestro usuario seleccionado, marcamos con el ratón en la casilla de "Control total", aplicamos y aceptamos en todas las ventanas anteriores.
+Una vez ya tengamos nuestro usuario seleccionado, marcamos con el ratón en la casilla de **"Control total"**, aplicamos y aceptamos en todas las ventanas anteriores.
 
 ![image](https://user-images.githubusercontent.com/104928044/170977167-95a6fc89-4350-4395-b249-8830ab9419c3.png)
 
@@ -341,7 +341,7 @@ Introducimos la contraseña y volveremos a estar dentro de nuestro VPS.
 
 Ahora solo debemos de escribir las sigles **"dvs"** en nuestra terminal y pulsar **"enter"** para activar el script.
 
-Nos mostrará una ventana en la que nos dirá si queremos cambiar el idioma de nuestra aplicación, en mi caso, lo cambiaré a Español, para ello elegiremos la opción de "Yes" y nos mostrará una lista con varios idiomas, nos desplazamos con las flechas de teclado hasta la opción que decidamos y con la tecla de "TAB" (Tabulador), señalaremos la opción de "Ok" para confirmar nuestra selección y pulsamos "Enter".
+Nos mostrará una ventana en la que nos dirá si queremos cambiar el idioma de nuestra aplicación, en mi caso, lo cambiaré a Español, para ello elegiremos la opción de **"Yes"** y nos mostrará una lista con varios idiomas, nos desplazamos con las flechas de teclado hasta la opción que decidamos y con la tecla de **"TAB"** (Tabulador), señalaremos la opción de **"Ok"** para confirmar nuestra selección y pulsamos **"Enter"**.
 
 ![image](https://user-images.githubusercontent.com/104928044/174062839-ab8fc1f8-2be3-4435-af5a-dc4d30c088e0.png)
 
@@ -349,11 +349,11 @@ Nos mostrará el menú principal de la herramienta donde podremos configurar tod
 
 ![image](https://user-images.githubusercontent.com/104928044/174063077-92142d89-646b-4afb-a0b8-092eff11c6e8.png)
 
-Elegimos la opción "01 Configuración inicial", recordad, marcáis el apartado con las flechas y con "TAB"+"Enter" confirmáis la opción.
+Elegimos la opción **"01 Configuración inicial"**, recordad, marcáis el apartado con las flechas y con **"TAB"+"Enter"** confirmáis la opción.
 
 ![image](https://user-images.githubusercontent.com/104928044/174063353-7cbbf76e-44dc-4867-be10-80bed4b65b32.png)
 
-Tened en cuenta que para el uso de esta herramienta será necesario tener una licencia vigente de radioaficionado, indicativo e ID de DMR. Elegimos la opción de "Yes".
+Tened en cuenta que para el uso de esta herramienta será necesario tener una licencia vigente de radioaficionado, indicativo e ID de DMR. Elegimos la opción de **"Yes"**.
 
 ![image](https://user-images.githubusercontent.com/104928044/174063758-ad818d5d-7e6a-4cd1-95f3-549ca5f8c1cc.png)
 
@@ -369,7 +369,7 @@ En la siguiente ventana nos requiere la misma ID, pero en la que debemos de aña
 
 ![image](https://user-images.githubusercontent.com/104928044/174078273-4255d096-8b46-4a73-95e2-678f023eb04e.png)
 
-El módulo Dstar lo dejaremos por defecto en "B" ya que para nuestro objetivo ahora mismo no nos es necesario.
+El módulo Dstar lo dejaremos por defecto en **"B"** ya que para nuestro objetivo ahora mismo no nos es necesario.
 
 ![image](https://user-images.githubusercontent.com/104928044/174078568-9bd478fc-f89f-4b77-a081-df6276c4bf37.png)
 
@@ -381,7 +381,7 @@ Este apartado es importante, debemos configurar el puerto por el que pasará tod
 
 ![image](https://user-images.githubusercontent.com/104928044/174079227-61d33c13-c880-4952-b4ec-fc3360508007.png)
 
-Elegimos el servidor de Brandmeister España y pulsamos en "Ok".
+Elegimos el servidor de Brandmeister España y pulsamos en **"Ok"**.
 
 ![image](https://user-images.githubusercontent.com/104928044/174080854-47054e6d-5e1f-4645-a01f-4e27bcded943.png)
 
@@ -389,17 +389,17 @@ Como bien nos indica el apartado introduciremos nuestra contraseña que tenemos 
 
 ![image](https://user-images.githubusercontent.com/104928044/174081979-63309b38-f8cd-4713-a55a-b93c23c306f3.png)
 
-Para este apartado he estado realizando varias pruebas con un servidor AMBE pero desde Oracle Cloud y mediante varias pruebas no he podido conseguir que el tráfico de la comunicación pase por este mismo para mejorar muy notablemente la calidad de audio, por lo que lo haremos funcionar mediante la opción **"4. Sin codificador de voz de hardware"** en la utilizaremos un software Vocoder.
+Para este apartado he estado realizando varias pruebas con un servidor AMBE pero desde Oracle Cloud y mediante varias pruebas no he podido conseguir que el tráfico de la comunicación pase por este mismo para mejorar muy notablemente la calidad de audio, por lo que lo haremos funcionar mediante la opción **"4. Sin codificador de voz de hardware"** en la utilizaremos un **software Vocoder**.
 
 ![image](https://user-images.githubusercontent.com/104928044/174082036-c102c18e-3bf5-470a-8938-dcb8b5898f0c.png)
 
-Pulsamos sobre "Yes" y todos los ajustes comenzarán a aplicarse.
+Pulsamos sobre **"Yes"** y todos los ajustes comenzarán a aplicarse.
 
 ![image](https://user-images.githubusercontent.com/104928044/174082166-838e6694-7ae0-47d6-bdc5-07a113ca6374.png)
 
 Ya la configuración inicial la tendríamos totalmente configurada y lista, pero **no olvidemos que hemos decidido en este ejemplo usar el puerto 51051** para tramitar toda la información de nuestro servidor, asi que debemos ponernos manos a la obra desde la web de Oracle Cloud para abrir nuestro puerto y crear la regla necesaria para iptables.
 
-Configuración de la apertura del puerto 51051 en Oracle Cloud:
+Configuración de la **apertura** del **puerto 51051** en **Oracle Cloud**:
 ![image](https://user-images.githubusercontent.com/104928044/174084936-9df595a4-7ab7-4914-927d-350631ca91a8.png)
 
 Regla que debemos introducir en nuestra iptables:
@@ -417,7 +417,7 @@ De acuerdo, entiendo que hasta este punto podréis estar un poco saturados, pero
 
 ![image](https://user-images.githubusercontent.com/104928044/174095701-51cc48d0-3a9b-4873-8f17-3554b71493cc.png)
 
-Abrimos la aplicación y nos dirigimos a la pestaña "Accounts":
+Abrimos la aplicación y nos dirigimos a la pestaña **"Accounts"**:
 
 ![image](https://user-images.githubusercontent.com/104928044/174096465-b4b2adea-7092-40aa-bdf9-3c9c2d4b6b1f.png)
 
@@ -425,20 +425,20 @@ Veremos todos los huecos para configurar vacíos, con lo que pinchamos sobre uno
 
 ![image](https://user-images.githubusercontent.com/104928044/174096654-0eba4f45-44d7-4250-b729-64a73d3ff7b2.png)
 
-Debemos modificar el protocolo con el que vamos a trabajar para ello pulsamos sobre la pestaña de "Protocol" y lo cambiaremos a "USRP":
+Debemos modificar el protocolo con el que vamos a trabajar para ello pulsamos sobre la pestaña de **"Protocol"** y lo cambiaremos a **"USRP"**:
 
 ![image](https://user-images.githubusercontent.com/104928044/174097238-a0b966a5-e3a2-4d79-9267-a80c520da16f.png)
 
 
 ![image](https://user-images.githubusercontent.com/104928044/174097201-7d0f8303-0248-4ff1-8eff-059288d5167c.png)
 
-En hostname debemos de introducir la IP pública de nuestro servidor VPS, pero como consejo más práctico creo que lo mejor será usar un DNS gratuito con el que le podamos asignar un nombre a esa IP para poder recordarla de una manera más sencilla. Tenemos a nuestra disposición la web de DuckDNS, es muy práctica y solo tardamos 1 minutos en realizar todo el proceso:
+En hostname debemos de introducir la IP pública de nuestro servidor VPS, pero como consejo más práctico creo que lo mejor será usar un **DNS gratuito** con el que le podamos asignar un nombre a esa IP para poder recordarla de una manera más sencilla. Tenemos a nuestra disposición la web de **DuckDNS**, es muy práctica y solo tardamos 1 minutos en realizar todo el proceso:
 
 Nos dirigimos a la web de https://www.duckdns.org/, nos registramos mismamente con una cuenta de Gmail y nos abrirá un menú como el siguiente:
 
 ![image](https://user-images.githubusercontent.com/104928044/174098363-60ffa47d-57df-4af5-b7b9-d86ad5325cea.png)
 
-En este menú añadiremos el nombre que queremos para nuestra dirección, a modo de ejemplo, he puesto "mobile-radio".
+En este menú añadiremos el nombre que queremos para nuestra dirección, a modo de ejemplo, he puesto **"mobile-radio"**.
 
 Una vez añadido el nombre de dominio debemos asignarle la IP pública a la que debe estar asociada este dominio.
 
@@ -450,15 +450,15 @@ Estupendo, ahora volvemos a nuestro teléfono y introduciremos todos los datos n
 
 Una vez tengamos todos los parámetros configurados pulsaremos sobre **"Save"**.
 
-Ahora vamos a configurar nuestra conexión a través de YSF y la red de EUROPELINK como ejemplo, vosotros podréis utilizar la que más os guste.
+Ahora vamos a configurar nuestra conexión a través de **YSF** y la red de **EUROPELINK** como ejemplo, vosotros podréis utilizar la que más os guste.
 
 ![image](https://user-images.githubusercontent.com/104928044/174102434-195c1fdf-eae9-4fea-be8b-f3fb76e1cc06.png)
 
-Manteniendo pulsada la letra "A" podemos elegir el modo por el que queremos salir:
+Manteniendo pulsada la letra **"A"** podemos elegir el modo por el que queremos salir:
 
 ![image](https://user-images.githubusercontent.com/104928044/174102645-37b60431-18f2-47db-8137-35b7a1d02fef.png)
 
-Manteniendo la "B" podremos elegir que Talkgroup de YSF queremos utilizar, voy a elegir EUROPELINK por ejemplo. Podemos incluso utilizar el dashboard de EUROPELINK (http://europelink.pa7lim.nl/) para observar todo el movimiento del tráfico que existe en la red y los compañeros que se encuentran transmitiendo.
+Manteniendo la **"B"** podremos elegir que Talkgroup de YSF queremos utilizar, voy a elegir EUROPELINK por ejemplo. Podemos incluso utilizar el dashboard de EUROPELINK (http://europelink.pa7lim.nl/) para observar todo el movimiento del tráfico que existe en la red y los compañeros que se encuentran transmitiendo.
 
 ![image](https://user-images.githubusercontent.com/104928044/174104199-185ae963-8266-4b1b-9568-6e9ef07e5e62.png)
 
