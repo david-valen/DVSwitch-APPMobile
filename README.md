@@ -397,3 +397,15 @@ Pulsamos sobre "Yes" y todos los ajustes comenzarán a aplicarse.
 
 ![image](https://user-images.githubusercontent.com/104928044/174082166-838e6694-7ae0-47d6-bdc5-07a113ca6374.png)
 
+Ya la configuración inicial la tendríamos totalmente configurada y lista, pero **no olvidemos que hemos decidido en este ejemplo usar el puerto 51051** para tramitar toda la información de nuestro servidor, asi que debemos ponernos manos a la obra desde la web de Oracle Cloud para abrir nuestro puerto y crear la regla necesaria para iptables.
+
+Configuración de la apertura del puerto 51051 en Oracle Cloud:
+![image](https://user-images.githubusercontent.com/104928044/174084936-9df595a4-7ab7-4914-927d-350631ca91a8.png)
+
+Regla que debemos introducir en nuestra iptables:
+
+~~~
+sudo iptables -I INPUT 7 -m state --state NEW -p tcp --dport [PUERTO] -j ACCEPT
+sudo netfilter-persistent save
+~~~
+
