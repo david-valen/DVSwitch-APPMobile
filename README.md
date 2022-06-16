@@ -26,19 +26,35 @@ Nos cambiará de ventana e iremos a un menú donde aparecerá un botón de color
 
 Nos despliega el menú de configuración de la máquina que queremos crear, en primer lugar debemos ofrecer un nombre a nuestra instancia.
 
-![image](https://user-images.githubusercontent.com/104928044/169713232-d5c0a7a9-7d32-42d5-aff0-f989c21c6404.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/169713232-d5c0a7a9-7d32-42d5-aff0-f989c21c6404.png"
+		alt="Nombre Instancia"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Omitimos el apartado **Ubicación**, simplemente comprobamos que se encuentra por defecto **Dominio de disponibilidad** en la opción de **Siempre gratis elegible**.
 
-![image](https://user-images.githubusercontent.com/104928044/169713315-5b47b36e-9b5b-4e06-a723-373a43ac1f8d.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/169713315-5b47b36e-9b5b-4e06-a723-373a43ac1f8d.png"
+		alt="Ubicación"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Continuamos con **Imagen y unidad**, aquí pinchamos sobre la palabra **Editar** que nos aparece dentro del recuadro blanco arriba a la derecha.
 
-![image](https://user-images.githubusercontent.com/104928044/169713392-bc84a855-97d4-4600-ae5e-d1ef7b3bf5ac.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/169713392-bc84a855-97d4-4600-ae5e-d1ef7b3bf5ac.png"
+		alt="Imagen y unidad"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Pinchamos sobre el botón **Cambiar imagen**.
 
-![image](https://user-images.githubusercontent.com/104928044/169714681-393b19a4-c6d3-469e-b012-96317bac6041.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/169714681-393b19a4-c6d3-469e-b012-96317bac6041.png"
+		alt="Cambiar Imagen"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Elegimos la imagen de **Canonical Ubuntu** en este momento la versión más reciente 20.04 y pulsamos más abajo en **Seleccionar imagen**.
 
