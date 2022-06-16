@@ -413,3 +413,52 @@ De esta manera ya tendríamos toda la configuración inicial lista. Pasamos a la
 
 # Instalación y configuración de DVSwitch Mobile
 
+De acuerdo, entiendo que hasta este punto podréis estar un poco saturados, pero tranquilos, hemos llegado a la parte más sencilla el final. Debemos dirigirnos a Google Play y buscar dentro de la tienda **"DVSwitch Mobile"** y la descargamos en nuestro terminal.
+
+![image](https://user-images.githubusercontent.com/104928044/174095701-51cc48d0-3a9b-4873-8f17-3554b71493cc.png)
+
+Abrimos la aplicación y nos dirigimos a la pestaña "Accounts":
+
+![image](https://user-images.githubusercontent.com/104928044/174096465-b4b2adea-7092-40aa-bdf9-3c9c2d4b6b1f.png)
+
+Veremos todos los huecos para configurar vacíos, con lo que pinchamos sobre uno de ellos:
+
+![image](https://user-images.githubusercontent.com/104928044/174096654-0eba4f45-44d7-4250-b729-64a73d3ff7b2.png)
+
+Debemos modificar el protocolo con el que vamos a trabajar para ello pulsamos sobre la pestaña de "Protocol" y lo cambiaremos a "USRP":
+
+![image](https://user-images.githubusercontent.com/104928044/174097238-a0b966a5-e3a2-4d79-9267-a80c520da16f.png)
+
+
+![image](https://user-images.githubusercontent.com/104928044/174097201-7d0f8303-0248-4ff1-8eff-059288d5167c.png)
+
+En hostname debemos de introducir la IP pública de nuestro servidor VPS, pero como consejo más práctico creo que lo mejor será usar un DNS gratuito con el que le podamos asignar un nombre a esa IP para poder recordarla de una manera más sencilla. Tenemos a nuestra disposición la web de DuckDNS, es muy práctica y solo tardamos 1 minutos en realizar todo el proceso:
+
+Nos dirigimos a la web de https://www.duckdns.org/, nos registramos mismamente con una cuenta de Gmail y nos abrirá un menú como el siguiente:
+
+![image](https://user-images.githubusercontent.com/104928044/174098363-60ffa47d-57df-4af5-b7b9-d86ad5325cea.png)
+
+En este menú añadiremos el nombre que queremos para nuestra dirección, a modo de ejemplo, he puesto "mobile-radio".
+
+Una vez añadido el nombre de dominio debemos asignarle la IP pública a la que debe estar asociada este dominio.
+
+![image](https://user-images.githubusercontent.com/104928044/174098889-56dfd0d6-2000-4885-9049-81c3259c80c1.png)
+
+Estupendo, ahora volvemos a nuestro teléfono y introduciremos todos los datos necesarios:
+
+![image](https://user-images.githubusercontent.com/104928044/174101070-31498f29-07d4-48c1-ba9f-7e4e1089ed70.png)
+
+Una vez tengamos todos los parámetros configurados pulsaremos sobre **"Save"**.
+
+Ahora vamos a configurar nuestra conexión a través de YSF y la red de EUROPELINK como ejemplo, vosotros podréis utilizar la que más os guste.
+
+![image](https://user-images.githubusercontent.com/104928044/174102434-195c1fdf-eae9-4fea-be8b-f3fb76e1cc06.png)
+
+Manteniendo pulsada la letra "A" podemos elegir el modo por el que queremos salir:
+
+![image](https://user-images.githubusercontent.com/104928044/174102645-37b60431-18f2-47db-8137-35b7a1d02fef.png)
+
+Manteniendo la "B" podremos elegir que Talkgroup de YSF queremos utilizar, voy a elegir EUROPELINK por ejemplo. Podemos incluso utilizar el dashboard de EUROPELINK (http://europelink.pa7lim.nl/) para observar todo el movimiento del tráfico que existe en la red y los compañeros que se encuentran transmitiendo.
+
+![image](https://user-images.githubusercontent.com/104928044/174104199-185ae963-8266-4b1b-9568-6e9ef07e5e62.png)
+
