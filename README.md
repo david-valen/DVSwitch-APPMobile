@@ -405,7 +405,11 @@ Configuración de la apertura del puerto 51051 en Oracle Cloud:
 Regla que debemos introducir en nuestra iptables:
 
 ~~~
-sudo iptables -I INPUT 7 -m state --state NEW -p tcp --dport [PUERTO] -j ACCEPT
+sudo iptables -I INPUT 7 -m state --state NEW -p udp --dport [PUERTO] -j ACCEPT
 sudo netfilter-persistent save
 ~~~
+
+De esta manera ya tendríamos toda la configuración inicial lista. Pasamos a la configuración en nuestro teléfono móvil.
+
+# Instalación y configuración de DVSwitch Mobile
 
