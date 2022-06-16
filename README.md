@@ -1,10 +1,3 @@
-author: David Valenzuela Vargas
-summary: En este apartado de explica como poder obtener tu propio servidor de radioaficionado en la nube y acccesible desde tu teléfono móvil de forma totalmente gratuita.
-id: dvswitch-server
-categories: dvswitch,radioafición,radio,dvswitchmobile,walkietalkie
-environments: Web
-status: Published
-
 # DVSwitch & APPMobile
 Creación de DVSwitch Server en Oracle Cloud (VPS Gratuito) y DVSwitch Mobile para radioaficionados.
 
