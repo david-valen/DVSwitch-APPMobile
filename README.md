@@ -242,17 +242,29 @@ Ahora en la misma ventana donde ya no nos aparecen todos los usuarios que tenía
 
 Realizamos click sobre **"Seleccionar una entidad de seguridad"** y se nos abrirá una nueva ventana.
 
-![image](https://user-images.githubusercontent.com/104928044/170976708-cd706efa-321d-4b9e-9532-ab9f95310491.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/170976708-cd706efa-321d-4b9e-9532-ab9f95310491.png"
+		alt="Entidad Seguridad"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Donde se muestra la flecha roja, debemos añadir nuestro usuario de Windows y seleccionar en **"Comprobar nombres"**, si todo está correcto pulsamos sobre aceptar.
 
 Una vez ya tengamos nuestro usuario seleccionado, marcamos con el ratón en la casilla de **"Control total"**, aplicamos y aceptamos en todas las ventanas anteriores.
 
-![image](https://user-images.githubusercontent.com/104928044/170977167-95a6fc89-4350-4395-b249-8830ab9419c3.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/170977167-95a6fc89-4350-4395-b249-8830ab9419c3.png"
+		alt="control total"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 De nuevo realizamos el intento de conexión como anteriormente explicamos y podemos comprobar que ya tenemos acceso a nuestro servidor mediante nuestro par de claves.
 
-![image](https://user-images.githubusercontent.com/104928044/170977912-7046b161-3b7a-4895-848f-efd99aaecd6b.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/170977912-7046b161-3b7a-4895-848f-efd99aaecd6b.png"
+		alt="acceso"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 **[FIN DE LA PARTE QUE PUEDES OMITIR SI NO TE APARECE EL MENSAJE DE ADVERTENCIA]**
 
@@ -278,7 +290,11 @@ Nos dirigimos al siguiente directorio en el que tendremos que modificar una seri
 cd /etc/fail2ban
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/170983006-9523ab14-dfb7-43b0-a8c4-5822bc76ad54.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/170983006-9523ab14-dfb7-43b0-a8c4-5822bc76ad54.png"
+		alt="fail2ban"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Vamos a realizar una copia de seguridad de nuestro archivo de configuración que viene por defecto **"jail.conf"**.
 
@@ -286,7 +302,11 @@ Vamos a realizar una copia de seguridad de nuestro archivo de configuración que
 sudo cp jail.conf jail.backup.conf
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/170983798-ffff2600-4774-4a68-9034-ca7d2926781d.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/170983798-ffff2600-4774-4a68-9034-ca7d2926781d.png"
+		alt="fail2ban"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Abrimos el archivo de configuración con el siguiente comando:
 
@@ -296,7 +316,11 @@ sudo nano jail.conf
 
 Nos dirigimos al apartado [DEFAULT] y descomentaremos las siguientes líneas (Borrar '#' de delante), os debe de quedar algo así:
 
-![image](https://user-images.githubusercontent.com/104928044/170997353-baa88d9f-d340-4e3d-9972-9f6e5bd25b00.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/170997353-baa88d9f-d340-4e3d-9972-9f6e5bd25b00.png"
+		alt="fail2ban"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Para guardar esta configuración debemos pulsar **"Control + O" y "Enter"** y para salir **"Control + X"**.
 
@@ -310,7 +334,11 @@ Nos dirigimos al directorio donde encontramos el archivo de configuración de SS
 cd /etc/ssh
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/170998583-5274520e-562c-45aa-bede-757c69a0e87f.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/170998583-5274520e-562c-45aa-bede-757c69a0e87f.png"
+		alt="ssh"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Abrimos el archivo **"sshd_config"**:
 
@@ -322,11 +350,19 @@ Una vez se nos despligue este archivo, debemos configurar dos parámetros, uno s
 
 Cambiamos el puerto por defecto:
 
-![image](https://user-images.githubusercontent.com/104928044/170999386-e18ca01d-44be-4d6e-aea7-f354d112e689.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/170999386-e18ca01d-44be-4d6e-aea7-f354d112e689.png"
+		alt="puertos"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Permitimos la autenticación por contraseña:
 
-![image](https://user-images.githubusercontent.com/104928044/170999474-5d870967-d3e7-48ff-9434-36351eb3a73d.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/170999474-5d870967-d3e7-48ff-9434-36351eb3a73d.png"
+		alt="authpass"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Para guardar esta configuración debemos pulsar **"Control + O" y "Enter"** y para salir **"Control + X"**.
 
@@ -336,7 +372,11 @@ Es importante antes de aplicar los cambios dar una contraseña al usuario **"ubu
 sudo passwd ubuntu
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/171000273-8cde1617-5645-4507-84fc-528b2807b6c4.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/171000273-8cde1617-5645-4507-84fc-528b2807b6c4.png"
+		alt="passwd"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Debéis saber que aunque cuando escribáis no se os muestre la contraseña realmente estáis escribiendo, es simplemente por seguridad por lo que no se os muestra y pulsáis enter para pasar de nuevo a confirmar la contraseña anteriormente ofrecida.
 
@@ -346,27 +386,51 @@ Reiniciamos y aplicamos los cambios con el comando:
 systemctl restart sshd.service
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/171000897-dd276f51-ab11-4671-b0af-c0d27c4a12dc.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/171000897-dd276f51-ab11-4671-b0af-c0d27c4a12dc.png"
+		alt="sshdserv"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Nos pedirá de nuevo la contraseña que le ofrecimos al usuario para confirmar los cambios y listo.
 
 Por último, nos queda abrir el nuevo puerto de entrada por SSH que tendrá nuestro servidor para ellos debemos de irnos a la web de Oracle Cloud en el apartado de **"Recursos informáticos > Instancias > Detalles de la instancia"**:
 
-![image](https://user-images.githubusercontent.com/104928044/171001412-8282002d-6693-42c3-b239-2ca947d4f8bc.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/171001412-8282002d-6693-42c3-b239-2ca947d4f8bc.png"
+		alt="detalles"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Pinchamos sobre el nombre de la **"Subred"** que le tengamos asignada.
 
-![image](https://user-images.githubusercontent.com/104928044/171001887-c655e07f-469e-48c7-996e-fb4b7fb21e27.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/171001887-c655e07f-469e-48c7-996e-fb4b7fb21e27.png"
+		alt="subred"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 De nuevo hacemos click sobre **"Default Security List for principal"**.
 
-![image](https://user-images.githubusercontent.com/104928044/171001992-6428ea30-22bf-4ceb-a7ba-4771647617a6.png)
- 
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/171001992-6428ea30-22bf-4ceb-a7ba-4771647617a6.png"
+		alt="subred"
+	style="float: left; margin-right: 10px;" />
+</p>
+
  Y añadimos una nueva regla de entrada.
  
- ![image](https://user-images.githubusercontent.com/104928044/171002238-6c61d820-885a-4b3d-af3d-e2ba5f0955c3.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/171002238-6c61d820-885a-4b3d-af3d-e2ba5f0955c3.png"
+		alt="regla entrada"
+	style="float: left; margin-right: 10px;" />
+</p>
 
-![image](https://user-images.githubusercontent.com/104928044/171002526-f8135601-51d1-4641-b106-466825b2a5f0.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/171002526-f8135601-51d1-4641-b106-466825b2a5f0.png"
+		alt="regla entrada"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Guardamos esta regla de entrada y lo que estaremos indicando es que desde cualquier IP por protocolo TCP y con destino al puerto 22422 le permitamos la conexión.
 
@@ -383,7 +447,11 @@ De esta forma ya tendríamos todo completado y ya nos debería de permitir el ac
 ssh -p [PUERTO] [USUARIO]@[TU IP PÚBLICA]
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/171006448-5dd7c21c-0c31-48a2-8631-13185863ca62.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/171006448-5dd7c21c-0c31-48a2-8631-13185863ca62.png"
+		alt="ssh"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 ¡LISTO!
 
@@ -395,7 +463,11 @@ Comenzamos con lo importante, una vez nos encontremos dentro de de nuestro servi
 sudo apt update -y && sudo apt upgrade -y
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/170979761-70901091-c064-408d-8664-2f6b242e7420.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/170979761-70901091-c064-408d-8664-2f6b242e7420.png"
+		alt="update & upgrade"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Esta actualización nos demorará varios minutos, tened paciencia.
 
@@ -406,7 +478,11 @@ Para comenzar descargaremos el archivo de instalación de los repositorios con e
 wget http://dvswitch.org/buster
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/174059352-f5ae3673-81a4-4f8b-bf0c-2db3d4c6fef9.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174059352-f5ae3673-81a4-4f8b-bf0c-2db3d4c6fef9.png"
+		alt="buster"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 A continuación, daremos permisos de ejecución al archivo **"buster"** recientemente obtenido y lo ejecutaremos.
 
@@ -415,7 +491,11 @@ sudo chmod +x buster
 sudo ./buster
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/174059751-d1a18abc-bd6b-4aa7-b887-90eecdadbe1a.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174059751-d1a18abc-bd6b-4aa7-b887-90eecdadbe1a.png"
+		alt="buster"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Ya teniendo los repositorios correctamente descargados, iniciamos la instalación de DVSwitch Server de la siguiente manera:
 
@@ -423,7 +503,11 @@ Ya teniendo los repositorios correctamente descargados, iniciamos la instalació
 sudo apt install dvswitch-server
 ~~~
 
-![image](https://user-images.githubusercontent.com/104928044/174060310-a1e53541-814a-4123-9109-6b25c593ef02.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174060310-a1e53541-814a-4123-9109-6b25c593ef02.png"
+		alt="dvswitchserver"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 En este punto debemos esperar unos minutos a que se realice toda la instalación y realizaremos un reinicio de nuestro servidor VPS mediante:
 
@@ -443,64 +527,125 @@ Ahora solo debemos de escribir las sigles **"dvs"** en nuestra terminal y pulsar
 
 Nos mostrará una ventana en la que nos dirá si queremos cambiar el idioma de nuestra aplicación, en mi caso, lo cambiaré a Español, para ello elegiremos la opción de **"Yes"** y nos mostrará una lista con varios idiomas, nos desplazamos con las flechas de teclado hasta la opción que decidamos y con la tecla de **"TAB"** (Tabulador), señalaremos la opción de **"Ok"** para confirmar nuestra selección y pulsamos **"Enter"**.
 
-![image](https://user-images.githubusercontent.com/104928044/174062839-ab8fc1f8-2be3-4435-af5a-dc4d30c088e0.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174062839-ab8fc1f8-2be3-4435-af5a-dc4d30c088e0.png"
+		alt="dvs"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Nos mostrará el menú principal de la herramienta donde podremos configurar todos los apartados, pero en este caso iremos al grano y os explicaré las configuraciones básicas y esenciales para comenzar a hacerlo funcional.
 
-![image](https://user-images.githubusercontent.com/104928044/174063077-92142d89-646b-4afb-a0b8-092eff11c6e8.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174063077-92142d89-646b-4afb-a0b8-092eff11c6e8.png"
+		alt="dvs"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Elegimos la opción **"01 Configuración inicial"**, recordad, marcáis el apartado con las flechas y con **"TAB"+"Enter"** confirmáis la opción.
 
-![image](https://user-images.githubusercontent.com/104928044/174063353-7cbbf76e-44dc-4867-be10-80bed4b65b32.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174063353-7cbbf76e-44dc-4867-be10-80bed4b65b32.png"
+		alt="config ini"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Tened en cuenta que para el uso de esta herramienta será necesario tener una licencia vigente de radioaficionado, indicativo e ID de DMR. Elegimos la opción de **"Yes"**.
 
-![image](https://user-images.githubusercontent.com/104928044/174063758-ad818d5d-7e6a-4cd1-95f3-549ca5f8c1cc.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174063758-ad818d5d-7e6a-4cd1-95f3-549ca5f8c1cc.png"
+		alt="yes"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 En esta ventana introducimos nuestro indicativo, seguimos.
 
-![image](https://user-images.githubusercontent.com/104928044/174064308-7a5ba338-8290-40cd-9985-fb98dfe65ebf.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174064308-7a5ba338-8290-40cd-9985-fb98dfe65ebf.png"
+		alt="id"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Aquí debemos de introducir nuestro ID de DMR. (Esta ID se obtiene desde la web de [radioid.net](https://radioid.net/))
 
-![image](https://user-images.githubusercontent.com/104928044/174064873-2fc2ac16-4181-402a-8766-8b7219e3950d.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174064873-2fc2ac16-4181-402a-8766-8b7219e3950d.png"
+		alt="id"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 En la siguiente ventana nos requiere la misma ID, pero en la que debemos de añadirle dos dígitos más pudiendo estar estos entre los intervalos de (00 hasta 99), de esta manera evitamos la duplicidad de nuestra ID, así pudiendo usar la misma más un sufijo en multitud de dispositivos alternativos a uno principal.
 
-![image](https://user-images.githubusercontent.com/104928044/174078273-4255d096-8b46-4a73-95e2-678f023eb04e.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174078273-4255d096-8b46-4a73-95e2-678f023eb04e.png"
+		alt="id"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 El módulo Dstar lo dejaremos por defecto en **"B"** ya que para nuestro objetivo ahora mismo no nos es necesario.
 
-![image](https://user-images.githubusercontent.com/104928044/174078568-9bd478fc-f89f-4b77-a081-df6276c4bf37.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174078568-9bd478fc-f89f-4b77-a081-df6276c4bf37.png"
+		alt="B"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 ID NXDN, lo dejaremos vacío y seguimos hacia la siguiente ventana.
 
-![image](https://user-images.githubusercontent.com/104928044/174079133-ca4da7f2-a2b8-4fb2-950f-9723fee7d2f5.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174079133-ca4da7f2-a2b8-4fb2-950f-9723fee7d2f5.png"
+		alt="nxdn"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Este apartado es importante, debemos configurar el puerto por el que pasará todo nuestro tráfico, vamos a poner como ejemplo **"51051"** pero esto va a gustos y preferencias de cada uno de vosotros.
 
-![image](https://user-images.githubusercontent.com/104928044/174079227-61d33c13-c880-4952-b4ec-fc3360508007.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174079227-61d33c13-c880-4952-b4ec-fc3360508007.png"
+		alt="nxdn"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Elegimos el servidor de Brandmeister España y pulsamos en **"Ok"**.
 
-![image](https://user-images.githubusercontent.com/104928044/174080854-47054e6d-5e1f-4645-a01f-4e27bcded943.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174080854-47054e6d-5e1f-4645-a01f-4e27bcded943.png"
+		alt="ok"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Como bien nos indica el apartado introduciremos nuestra contraseña que tenemos asociada a nuestra cuenta de Brandmeister (No es obligatorio el uso de esta red, esta se trata de una red privada en la que para su uso debemos realizar un registro y obtener estas credenciales de acceso). En este caso, realizaremos la conexión mediante otra red, que posteriormente explicaremos.
 
-![image](https://user-images.githubusercontent.com/104928044/174081979-63309b38-f8cd-4713-a55a-b93c23c306f3.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174081979-63309b38-f8cd-4713-a55a-b93c23c306f3.png"
+		alt="dmr"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Para este apartado he estado realizando varias pruebas con un servidor AMBE pero desde Oracle Cloud y mediante varias pruebas no he podido conseguir que el tráfico de la comunicación pase por este mismo para mejorar muy notablemente la calidad de audio, por lo que lo haremos funcionar mediante la opción **"4. Sin codificador de voz de hardware"** en la utilizaremos un **software Vocoder**.
 
-![image](https://user-images.githubusercontent.com/104928044/174082036-c102c18e-3bf5-470a-8938-dcb8b5898f0c.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174082036-c102c18e-3bf5-470a-8938-dcb8b5898f0c.png"
+		alt="vocoder"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Pulsamos sobre **"Yes"** y todos los ajustes comenzarán a aplicarse.
 
-![image](https://user-images.githubusercontent.com/104928044/174082166-838e6694-7ae0-47d6-bdc5-07a113ca6374.png)
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174082166-838e6694-7ae0-47d6-bdc5-07a113ca6374.png"
+		alt="yes"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Ya la configuración inicial la tendríamos totalmente configurada y lista, pero **no olvidemos que hemos decidido en este ejemplo usar el puerto 51051** para tramitar toda la información de nuestro servidor, asi que debemos ponernos manos a la obra desde la web de Oracle Cloud para abrir nuestro puerto y crear la regla necesaria para iptables.
 
 Configuración de la **apertura** del **puerto 51051** en **Oracle Cloud**:
-![image](https://user-images.githubusercontent.com/104928044/174084936-9df595a4-7ab7-4914-927d-350631ca91a8.png)
+
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/104928044/174084936-9df595a4-7ab7-4914-927d-350631ca91a8.png"
+		alt="yes"
+	style="float: left; margin-right: 10px;" />
+</p>
 
 Regla que debemos introducir en nuestra iptables:
 
