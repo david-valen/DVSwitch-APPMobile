@@ -419,7 +419,7 @@ De acuerdo, entiendo que hasta este punto podréis estar un poco saturados, pero
 
 Abrimos la aplicación y nos dirigimos a la pestaña **"Accounts"**:
 
-![image](https://user-images.githubusercontent.com/104928044/174096465-b4b2adea-7092-40aa-bdf9-3c9c2d4b6b1f.png)
+![image](https://user-images.githubusercontent.com/104928044/174112691-f06df3bf-29a7-40f1-9f92-e1bc9a4246a6.png)
 
 Veremos todos los huecos para configurar vacíos, con lo que pinchamos sobre uno de ellos:
 
