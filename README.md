@@ -278,7 +278,7 @@ En primer lugar realizamos una actualizacion de nuestros repositorios:
 sudo apt update -y && sudo apt upgrade -y
 ~~~
 
-He instalaremos **Fail2ban** esta aplicación nos protegerá aquellos puertos que tengamos abiertos ante varios intentos fallidos y que posteriormente serán baneados para evitar posibles ataques de fuerza bruta.
+Instalaremos **Fail2ban** esta aplicación nos protegerá aquellos puertos que tengamos abiertos ante varios intentos fallidos y que posteriormente serán baneados para evitar posibles ataques de fuerza bruta.
 
 ~~~
 sudo apt install fail2ban -y
@@ -424,7 +424,7 @@ De nuevo hacemos click sobre **"Default Security List for principal"**.
 	style="float: left; margin-right: 10px;" />
 </p>
 
- Y añadimos una nueva regla de entrada.
+Y añadimos una nueva regla de entrada.
  
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/104928044/171002238-6c61d820-885a-4b3d-af3d-e2ba5f0955c3.png"
