@@ -299,11 +299,11 @@ cd /etc/fail2ban
 Vamos a realizar una copia de seguridad de nuestro archivo de configuración que viene por defecto **"jail.conf"**.
 
 ~~~
-sudo cp jail.conf jail.backup.conf
+sudo cp jail.conf jail.local
 ~~~
 
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/104928044/170983798-ffff2600-4774-4a68-9034-ca7d2926781d.png"
+	<img src="https://user-images.githubusercontent.com/104928044/174291393-0ee2d066-8e29-4094-8ce9-563d61846c32.png"
 		alt="fail2ban"
 	style="float: left; margin-right: 10px;" />
 </p>
@@ -311,7 +311,7 @@ sudo cp jail.conf jail.backup.conf
 Abrimos el archivo de configuración con el siguiente comando:
 
 ~~~
-sudo nano jail.conf
+sudo nano jail.local
 ~~~
 
 Nos dirigimos al apartado [DEFAULT] y descomentaremos las siguientes líneas (Borrar '#' de delante), os debe de quedar algo así:
@@ -325,6 +325,12 @@ Nos dirigimos al apartado [DEFAULT] y descomentaremos las siguientes líneas (Bo
 Para guardar esta configuración debemos pulsar **"Control + O" y "Enter"** y para salir **"Control + X"**.
 
 Hemos configurado para que haga un baneo básico gradual, cada cierto numero de equivocaciones será baneado un tiempo que este se prolongará más a cada número de intentos fallidos que realice.
+
+Para aplicarlos cambios en este archivo realizaremos el siguiente comando:
+
+~~~
+sudo systemctl restart fail2ban.service
+~~~
 
 Vamos ahora a configurar nuestro puerto SSH de entrada que no será el que viene por defecto [22] ya que seremos muy propensos a ataques automatizados con ese puerto.
 
